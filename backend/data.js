@@ -142,44 +142,6 @@ const allProducts = {
       discount_price: 90,
       main_price: 80,
       image: "pexels-photo-3193731.jpeg",
-
-      // related_items: [
-      //   {
-      //     header: { text: Extras.productCardHeaderName, href: "#" },
-
-      //     products: [
-      //       //Related products here
-
-      //       {
-      //         id: 2,
-      //         name: "Timberlin",
-      //         slug: "timberlin",
-      //         recent_price: 70,
-      //         discount_price: 90,
-      //         main_price: 70,
-      //         image: "pexels-photo-1317712.jpeg",
-      //         currency_symbol: {
-      //           naira: Extras.currency_sign.naira,
-      //           dollar: Extras.currency_sign.dollar,
-      //         },
-
-      //         related_items: [
-      //           {
-      //             header: { text: Extras.productCardHeaderName, href: "#" },
-      //             products: [],
-      //           },
-      //         ],
-
-      //         getDiscount() {
-      //           const getDiscount =
-      //             (this.recent_price / 100) * this.discount_price;
-
-      //           this.main_price = Math.floor(this.recent_price - getDiscount);
-      //         },
-      //       },
-      //     ],
-      //   },
-      // ],
     },
 
     {
