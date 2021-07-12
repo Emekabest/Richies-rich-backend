@@ -31,7 +31,7 @@ const allProducts = {
             recent_price: 70,
             discount_price: 90,
             main_price: 70,
-            image: "pexels-photo-5935748",
+            image: "pexels-photo-5935748.jpeg",
             currency_symbol: {
               naira: Extras.currency_sign.naira,
               dollar: Extras.currency_sign.dollar,
@@ -63,7 +63,7 @@ const allProducts = {
       discount_price: 90,
       main_price: 70,
       category: "Female",
-      image: "pexels-photo-2002717",
+      image: "pexels-photo-2002717.jpeg",
 
       // related_items: [
       //   {
@@ -308,7 +308,7 @@ const allProducts = {
       recent_price: 100,
       discount_price: 30,
       main_price: 100,
-      image: "pexels-photo-2994951",
+      image: "pexels-photo-2994951.jpeg",
 
       // related_items: [
       //   {
@@ -357,7 +357,7 @@ const allProducts = {
       recent_price: 80,
       discount_price: 90,
       main_price: 80,
-      image: "pexels-photo-4620624",
+      image: "pexels-photo-4620624.jpeg",
 
       // related_items: [
       //   {
@@ -405,7 +405,7 @@ const allProducts = {
       recent_price: 40,
       discount_price: 60,
       main_price: 40,
-      image: "pexels-photo-5886045",
+      image: "pexels-photo-5886045.jpeg",
 
       // related_items: [
       //   {
