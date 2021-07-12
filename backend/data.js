@@ -3,7 +3,6 @@ const Extras = {
     naira: "&#8358",
     dollar: "&#36",
   },
-  productCardHeaderName: "Related items",
 };
 
 const allProducts = {
@@ -19,8 +18,6 @@ const allProducts = {
       image: "pexels-photo-2955375.jpeg",
 
       related_items: {
-        header: { text: Extras.productCardHeaderName, href: "#" },
-
         products: [
           //Related products here
 
@@ -29,27 +26,10 @@ const allProducts = {
             name: "Timberlin",
             slug: "timberlin",
             recent_price: 70,
+            category: "Men",
             discount_price: 90,
             main_price: 70,
             image: "pexels-photo-5935748.jpeg",
-            currency_symbol: {
-              naira: Extras.currency_sign.naira,
-              dollar: Extras.currency_sign.dollar,
-            },
-
-            related_items: [
-              {
-                header: { text: Extras.productCardHeaderName, href: "#" },
-                products: [],
-              },
-            ],
-
-            getDiscount() {
-              const getDiscount =
-                (this.recent_price / 100) * this.discount_price;
-
-              this.main_price = Math.floor(this.recent_price - getDiscount);
-            },
           },
         ],
       },
@@ -504,44 +484,6 @@ const allProducts = {
       discount_price: 5,
       main_price: 100,
       image: "pexels-photo-2466756(1).jpeg",
-
-      // related_items: [
-      //   {
-      //     header: { text: Extras.productCardHeaderName, href: "#" },
-
-      //     products: [
-      //       //Related products here
-
-      //       {
-      //         id: 2,
-      //         name: "Timberlin",
-      //         slug: "timberlin",
-      //         recent_price: 70,
-      //         discount_price: 90,
-      //         main_price: 70,
-      //         image: "pexels-photo-1317712.jpeg",
-      //         currency_symbol: {
-      //           naira: Extras.currency_sign.naira,
-      //           dollar: Extras.currency_sign.dollar,
-      //         },
-
-      //         related_items: [
-      //           {
-      //             header: { text: Extras.productCardHeaderName, href: "#" },
-      //             products: [],
-      //           },
-      //         ],
-
-      //         getDiscount() {
-      //           const getDiscount =
-      //             (this.recent_price / 100) * this.discount_price;
-
-      //           this.main_price = Math.floor(this.recent_price - getDiscount);
-      //         },
-      //       },
-      //     ],
-      //   },
-      // ],
     },
 
     {
@@ -591,6 +533,32 @@ const allProducts = {
       //     ],
       //   },
       // ],
+    },
+
+    {
+      id: 2,
+      name: "Timberlin",
+      slug: "timberlin",
+      recent_price: 70,
+      category: "Men",
+      discount_price: 90,
+      main_price: 70,
+      image: "pexels-photo-5935748.jpeg",
+
+      related_items: {
+        products: [
+          {
+            id: 1,
+            name: "Bigman cloths",
+            slug: "bigman-cloths",
+            category: "Men",
+            recent_price: 20000,
+            discount_price: 20,
+            main_price: 40,
+            image: "pexels-photo-2955375.jpeg",
+          },
+        ],
+      },
     },
 
     {
