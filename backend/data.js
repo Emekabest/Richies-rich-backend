@@ -18,43 +18,41 @@ const allProducts = {
       main_price: 40,
       image: "pexels-photo-2955375.jpeg",
 
-      // related_items: [
-      //   {
-      //     header: { text: Extras.productCardHeaderName, href: "#" },
+      related_items: {
+        header: { text: Extras.productCardHeaderName, href: "#" },
 
-      //     products: [
-      //       //Related products here
+        products: [
+          //Related products here
 
-      //       {
-      //         id: 2,
-      //         name: "Timberlin",
-      //         slug: "timberlin",
-      //         recent_price: 70,
-      //         discount_price: 90,
-      //         main_price: 70,
-      //         image: "pexels-photo-1317712.jpeg",
-      //         currency_symbol: {
-      //           naira: Extras.currency_sign.naira,
-      //           dollar: Extras.currency_sign.dollar,
-      //         },
+          {
+            id: 2,
+            name: "Timberlin",
+            slug: "timberlin",
+            recent_price: 70,
+            discount_price: 90,
+            main_price: 70,
+            image: "pexels-photo-5935748",
+            currency_symbol: {
+              naira: Extras.currency_sign.naira,
+              dollar: Extras.currency_sign.dollar,
+            },
 
-      //         related_items: [
-      //           {
-      //             header: { text: Extras.productCardHeaderName, href: "#" },
-      //             products: [],
-      //           },
-      //         ],
+            related_items: [
+              {
+                header: { text: Extras.productCardHeaderName, href: "#" },
+                products: [],
+              },
+            ],
 
-      //         getDiscount() {
-      //           const getDiscount =
-      //             (this.recent_price / 100) * this.discount_price;
+            getDiscount() {
+              const getDiscount =
+                (this.recent_price / 100) * this.discount_price;
 
-      //           this.main_price = Math.floor(this.recent_price - getDiscount);
-      //         },
-      //       },
-      //     ],
-      //   },
-      // ],
+              this.main_price = Math.floor(this.recent_price - getDiscount);
+            },
+          },
+        ],
+      },
     },
 
     {
@@ -65,7 +63,7 @@ const allProducts = {
       discount_price: 90,
       main_price: 70,
       category: "Female",
-      image: "pexels-photo-3310694.jpeg",
+      image: "pexels-photo-2002717",
 
       // related_items: [
       //   {
@@ -310,7 +308,7 @@ const allProducts = {
       recent_price: 100,
       discount_price: 30,
       main_price: 100,
-      image: "pexels-photo-2922301.jpeg",
+      image: "pexels-photo-2994951",
 
       // related_items: [
       //   {
@@ -353,13 +351,13 @@ const allProducts = {
 
     {
       id: 4,
-      name: "Yellow tikky",
-      slug: "yellow-tikky",
+      name: "clark tikky",
+      slug: "clark-tikky",
       category: "Kids",
       recent_price: 80,
       discount_price: 90,
       main_price: 80,
-      image: "pexels-photo-1018911.jpeg",
+      image: "pexels-photo-4620624",
 
       // related_items: [
       //   {
@@ -401,13 +399,13 @@ const allProducts = {
     },
     {
       id: 1,
-      name: "Armless ",
-      slug: "armless",
+      name: "Hunai ",
+      slug: "hunai",
       category: "Female",
       recent_price: 40,
       discount_price: 60,
       main_price: 40,
-      image: "pexels-photo-6112012.jpeg",
+      image: "pexels-photo-5886045",
 
       // related_items: [
       //   {
@@ -647,3 +645,32 @@ const allProducts = {
 };
 
 module.exports = allProducts;
+
+///////////////////////////////
+
+// const div = document.querySelector(".div");
+// const btn = document.querySelector("button");
+// const nameInput = document.querySelector(".name");
+// const ageInput = document.querySelector(".age");
+// const datas = [];
+
+// const addToList = () => {
+//   const UserDetails = {
+//     name: nameInput.value,
+//     age: ageInput.value,
+//   };
+
+//   datas.push(UserDetails);
+//   console.log(datas);
+
+//   div.innerHTML = "";
+
+//   datas.forEach((data) => {
+//     div.innerHTML += `<div style="border: 1px solid black">
+//           <h1>name:${data.name}</h1>
+//           <h1>age:${data.age}</h1>
+//         </div>`;
+//   });
+// };
+
+// btn.addEventListener("click", addToList);
